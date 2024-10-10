@@ -1,0 +1,31 @@
+﻿<Window x:Name="AppOC" x:Class="AppOC_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppOC_WPF"
+        mc:Ignorable="d"
+        Title="AppOC" Height="500" Width="850" Icon="/83b1a4442c99450c8753bd0812d511d2.jpg">
+    <Grid Width="810" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="373" Margin="14,10,0,0" Stroke="#FF6C6C6C" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="Lb1" Content="Лабораторная работа 1" HorizontalAlignment="Left" Margin="30,50,0,0" Width="160" Click="Lb1_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb2" Content="Лабораторная работа 2" HorizontalAlignment="Left" Margin="30,85,0,0" Width="160" Click="Lb2_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb3" Content="Лабораторная работа 3" HorizontalAlignment="Left" Margin="30,120,0,0" Width="160" Click="Lb3_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb4" Content="Лабораторная работа 4" HorizontalAlignment="Left" Margin="30,155,0,0" Width="160" Click="Lb4_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb5" Content="Лабораторная работа 5" HorizontalAlignment="Left" Margin="30,190,0,0" Width="160" Click="Lb5_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb6" Content="Лабораторная работа 6" HorizontalAlignment="Left" Margin="30,225,0,0" Width="160" Click="Lb6_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb7" Content="Лабораторная работа 7" HorizontalAlignment="Left" Margin="30,260,0,0" Width="160" Click="Lb7_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb8" Content="Лабораторная работа 8" HorizontalAlignment="Left" Margin="30,295,0,0" Width="160" Click="Lb8_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <Button x:Name="Lb9" Content="Лабораторная работа 9" HorizontalAlignment="Left" Margin="30,330,0,0" Width="160" Click="Lb9_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
+        <ListBox x:Name="TextInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="232,40,30,0" FontFamily="Calibri" FontSize="14" Height="360" VerticalAlignment="Top"/>
+        <Button x:Name="Info" Content="О программе" HorizontalAlignment="Left" Margin="55,417,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.078,-0.379" Height="30" Width="110" Click="Info_Click" Background="#FFCCE1FF" FontFamily="Calibri" FontSize="14"/>
+        <Button x:Name="Start" Content="Запуск" Margin="423,412,287,0" Click="Start_Click" FontFamily="Calibri" FontSize="16" Height="35" VerticalAlignment="Top"/>
+        <Label Content="Выбор лабороторных работ:" HorizontalAlignment="Left" Margin="25,17,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="14"/>
+    </Grid>
+</Window>
