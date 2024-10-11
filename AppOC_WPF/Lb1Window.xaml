@@ -5,43 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppOC_WPF"
         mc:Ignorable="d"
-        Title="Характеристики системы и ПК" Height="531" Width="400
-">
+        Title="Характеристики системы и ПК" Height="531" Width="410">
     <Grid RenderTransformOrigin="0.5,0.483" Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="59*"/>
-            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Rectangle HorizontalAlignment="Left" Height="198" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="4,17,0,0" Grid.ColumnSpan="2"/>
-        <Rectangle HorizontalAlignment="Left" Height="162" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="4,232,0,0" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Center" Height="198" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="0,17,0,0"/>
+        <Rectangle HorizontalAlignment="Center" Height="162" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="0,232,0,0"/>
         <Label Content="Информация о системе:" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Background="White" Height="26" Width="143"/>
         <Label Content="Платформа:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="path" HorizontalAlignment="Left" Margin="163,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="23" Text="(Например) C:\" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="path" HorizontalAlignment="Left" Margin="163,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="23" Text="(Например) C:\"/>
         <Label Content="Версия ОС:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
-        <Label Content="Service Pack:" HorizontalAlignment="Left" Margin="193,41,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Label Content="Номер ОС:" HorizontalAlignment="Left" Margin="193,71,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-        <Button x:Name="Info_take" Content="Получить" HorizontalAlignment="Left" Margin="55,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.162" Height="23" Width="63" Click="Info_take_Click" Grid.Column="1"/>
+        <Label Content="Service Pack:" HorizontalAlignment="Left" Margin="193,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер ОС:" HorizontalAlignment="Left" Margin="193,71,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Info_take" Content="Получить" HorizontalAlignment="Left" Margin="291,253,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.162" Height="23" Width="63" Click="Info_take_Click"/>
         <Label Content="Windows инсталированна из каталога:" HorizontalAlignment="Left" Margin="3,119,0,0" VerticalAlignment="Top"/>
         <Label Content="Каталог Windows:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top"/>
-        <Label Content="Системный каталог Windows:" HorizontalAlignment="Left" Margin="223,119,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Системный каталог Windows:" HorizontalAlignment="Left" Margin="223,119,0,0" VerticalAlignment="Top"/>
         <Label Content="Информация о диске:" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top" Background="White" Width="130"/>
         <Label Content="Введите путь для диска:  " HorizontalAlignment="Left" Margin="12,0,0,0" VerticalAlignment="Center"/>
         <Label Content="Серийный номер:&#xD;&#xA;" HorizontalAlignment="Left" Margin="12,281,0,0" VerticalAlignment="Top" Height="29"/>
         <TextBlock x:Name="Platform" HorizontalAlignment="Left" Margin="88,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" IsEnabled="False"/>
         <TextBlock x:Name="Version" HorizontalAlignment="Left" Margin="88,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
-        <TextBlock x:Name="ServisPack"  HorizontalAlignment="Left" Margin="35,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" Grid.Column="1"/>
-        <TextBlock x:Name="NumOC" HorizontalAlignment="Left" Margin="35,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" Grid.Column="1"/>
+        <TextBlock x:Name="ServicePack"  HorizontalAlignment="Left" Margin="271,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
+        <TextBlock x:Name="NumOC" HorizontalAlignment="Left" Margin="271,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
         <TextBlock x:Name="WinCatInst" HorizontalAlignment="Left" Margin="25,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
-        <TextBlock x:Name="SisCat" HorizontalAlignment="Left" Margin="232,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="WinCat" HorizontalAlignment="Left" Margin="138,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="SisCat" HorizontalAlignment="Left" Margin="232,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
+        <TextBlock x:Name="WinCat" HorizontalAlignment="Left" Margin="138,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
         <TextBlock x:Name="SerNum" HorizontalAlignment="Left" Margin="130,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
         <Label Content="Имя тома: &#xA;" HorizontalAlignment="Left" Margin="12,313,0,0" VerticalAlignment="Top" Height="29"/>
         <TextBlock x:Name="NameTom" HorizontalAlignment="Left" Margin="93,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
-        <Label Content="Максимальное количество символов в имени для файла:&#xA;" HorizontalAlignment="Left" Margin="12,351,0,0" VerticalAlignment="Top" Height="29" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="maxSymb" HorizontalAlignment="Left" Margin="35,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5" Grid.Column="1"/>
-        <Rectangle HorizontalAlignment="Left" Height="55" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="4,415,0,0" Grid.ColumnSpan="2"/>
+        <Label Content="Максимальное количество символов в имени для файла:&#xA;" HorizontalAlignment="Left" Margin="12,351,0,0" VerticalAlignment="Top" Height="29"/>
+        <TextBlock x:Name="maxSymb" HorizontalAlignment="Left" Margin="271,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
+        <Rectangle HorizontalAlignment="Center" Height="55" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="0,415,0,0"/>
         <Label Content="Тактовая частота процессора:" HorizontalAlignment="Left" Margin="8,401,0,0" VerticalAlignment="Top" Background="White" Width="175"/>
-        <Button x:Name="UnfoCpu" Content="Определить" HorizontalAlignment="Left" Margin="35,432,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.162" Height="23" Width="72" Click="UnfoCpu_Click" Grid.Column="1"/>
-        <TextBlock x:Name="CPU" HorizontalAlignment="Left" Margin="13,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Height="23" Background="#FFE5E5E5"/>
+        <Button x:Name="UnfoCpu" Content="Определить" HorizontalAlignment="Left" Margin="271,432,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.162" Height="23" Width="72" Click="UnfoCpu_Click"/>
+        <TextBlock x:Name="CPU" HorizontalAlignment="Left" Margin="13,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Height="23" Background="#FFE5E5E5"/>
     </Grid>
 </Window>

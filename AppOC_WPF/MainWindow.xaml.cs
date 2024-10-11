@@ -42,7 +42,8 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"\t•  физическое положение файлов на дисковом носителе;");
             TextInfo.Items.Add($"\t•  наличие скрытых частей программы;");
             TextInfo.Items.Add($"\t•  физические особенности (в том числе дефекты) носителя.");
-
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($" ");
         }
 
         private void Lb2_Click(object sender, RoutedEventArgs e)
