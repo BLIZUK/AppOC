@@ -20,5 +20,5 @@ AppOC - Windows System Analyzer.
 ### Используемый инструментарий:
 - Платформа WPF
   - XAML    
-- Библиотека System::Management из пакета  
+- Библиотека System::Management
 
