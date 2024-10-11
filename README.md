@@ -1,5 +1,5 @@
 # AppOC
-Version 0.0.1
+PetProject version 0.0.1
 
 ### Общая информация:
 AppOC - Windows System Analyzer.
