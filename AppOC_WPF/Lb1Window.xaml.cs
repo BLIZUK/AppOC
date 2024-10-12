@@ -29,7 +29,7 @@ namespace AppOC_WPF
 
         public Lb1Window()
         {
-            // Инициализация окна
+            // Инициализация окна-----------------------------------------------------------------------------------
             InitializeComponent();
             // Получение данных о системе
             string version = Environment.OSVersion.Version.Major.ToString();
@@ -58,7 +58,7 @@ namespace AppOC_WPF
             WinCatInst.Text = " H:\\" ;
         }
 
-        // Кнопка получение информации о диске
+        // Кнопка получение информации о диске----------------------------------------------------------------------
         private void Info_take_Click(object sender, RoutedEventArgs e)
         {
             // Получение пути из TextBox
@@ -122,7 +122,7 @@ namespace AppOC_WPF
             }
         }
 
-        // Кнопка получения информации о тактовой частоте процессора 
+        // Кнопка получения информации о тактовой частоте процессора------------------------------------------------
         private void UnfoCpu_Click(object sender, RoutedEventArgs e)
         {
             try

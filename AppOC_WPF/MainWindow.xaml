@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AppOC_WPF"
         mc:Ignorable="d"
         Title="AppOC" Height="500" Width="850" Icon="/83b1a4442c99450c8753bd0812d511d2.jpg">
-    <Grid Width="810" Background="White">
+    <Grid Background="White" Margin="20,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -25,7 +25,7 @@
         <Button x:Name="Lb9" Content="Лабораторная работа 9" HorizontalAlignment="Left" Margin="30,330,0,0" Width="160" Click="Lb9_Click" FontFamily="Calibri" FontSize="14" Height="30" VerticalAlignment="Top"/>
         <ListBox x:Name="TextInfo" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="232,17,30,0" FontFamily="Calibri" FontSize="14" Height="360" VerticalAlignment="Top"/>
         <Button x:Name="Info" Content="О программе" HorizontalAlignment="Left" Margin="55,417,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.078,-0.379" Height="30" Width="110" Click="Info_Click" Background="#FFCCE1FF" FontFamily="Calibri" FontSize="14"/>
-        <Button x:Name="Start" Content="Запуск" Margin="458,409,252,0" Click="Start_Click" FontFamily="Calibri" FontSize="16" Height="35" VerticalAlignment="Top"/>
+        <Button x:Name="Start" Content="Запуск" Margin="458,409,272,0" Click="Start_Click" FontFamily="Calibri" FontSize="16" Height="35" VerticalAlignment="Top"/>
         <Label Content="Выбор лабороторных работ:" HorizontalAlignment="Left" Margin="25,17,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="14"/>
     </Grid>
 </Window>

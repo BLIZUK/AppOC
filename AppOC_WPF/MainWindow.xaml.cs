@@ -42,6 +42,7 @@ namespace AppOC_WPF
 
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb1_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 1;
@@ -65,6 +66,7 @@ namespace AppOC_WPF
 
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb2_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 2;
@@ -88,6 +90,7 @@ namespace AppOC_WPF
 
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb3_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 3;
@@ -97,6 +100,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb4_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 4;
@@ -106,6 +110,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb5_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 5;
@@ -115,6 +120,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb6_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 6;
@@ -124,6 +130,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb7_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 7;
@@ -133,6 +140,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb8_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 8;
@@ -142,6 +150,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Lb9_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 9;
@@ -151,6 +160,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"Цель работы:");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Info_Click(object sender, RoutedEventArgs e)
         {
             flagChoseLb = 0;
@@ -170,6 +180,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"");
         }
 
+        //кнопка ---------------------------------------------------------------------------------------
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             switch (flagChoseLb)
