@@ -16,11 +16,30 @@ namespace AppOC_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        // Флаг выбора программы
         int flagChoseLb = 0;
 
         public MainWindow()
         {
             InitializeComponent();
+            TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"\t\t\tВыберите лабораторную задачу.");
+            TextInfo.Items.Add(" ");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+
         }
 
         private void Lb1_Click(object sender, RoutedEventArgs e)
@@ -33,7 +52,6 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"  Целью данной работы является изучение процедур и функций Win32");
             TextInfo.Items.Add($"    позволяющих получить общую информации о характеристиках компьютера  ");
             TextInfo.Items.Add($"    u операционной системы.");
-
             TextInfo.Items.Add($"  В данной лабораторной работе рассматриваются функции Win32, с  ");
             TextInfo.Items.Add($"    помощью которых можно получить перечисленную информацию:");
             TextInfo.Items.Add(" ");
@@ -44,51 +62,112 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"\t•  физические особенности (в том числе дефекты) носителя.");
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($" ");
+
         }
 
         private void Lb2_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 2;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 2:");
+            TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"  Целью работы является изучение основных функций ядра Kernel32.dll ");
+            TextInfo.Items.Add($"    для работы с виртуальной  памятью. Рассматриваемые в данной ");
+            TextInfo.Items.Add($"    лабораторной работе функции позволяют:");
+            TextInfo.Items.Add($"\t•  получить информацию о состоянии системной памяти и виртуального ");
+            TextInfo.Items.Add($"\t   адресного пространства любого процесса;");
+            TextInfo.Items.Add($"\t•  напрямую резервировать регион адресного пространства;");
+            TextInfo.Items.Add($"\t•  передавать зарезервированному региону физическую память;");
+            TextInfo.Items.Add($"\t•  освобождать регионы адресного пространства;");
+            TextInfo.Items.Add($"\t•  изменять атрибуты защиты страниц виртуальной памяти.");
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($" ");
+
+
         }
 
         private void Lb3_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 3;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 3:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb4_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 4;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 4:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb5_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 5;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 5:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb6_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 6;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 6:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb7_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 7;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 7:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb8_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 8;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 8:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Lb9_Click(object sender, RoutedEventArgs e)
         {
+            flagChoseLb = 9;
             TextInfo.Items.Clear();
+            TextInfo.Items.Add($" ");
+            TextInfo.Items.Add($"\t\t\tЛабораторная работа 9:");
+            TextInfo.Items.Add($"Цель работы:");
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            flagChoseLb = 0;
+            TextInfo.Items.Clear();
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"\t\t               AppOC Windows System Analyzer");
+            TextInfo.Items.Add($"\t\t\t\t     0.0.1");
+            TextInfo.Items.Add($"\t\t   Разработана Близученко Андреем ИВТ2-23");
+            TextInfo.Items.Add($"\t\t\t\t 10.10.2024");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"");
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
@@ -102,6 +181,11 @@ namespace AppOC_WPF
                     Lb1Window Lb1win = new Lb1Window();
                     Lb1win.Owner = this;
                     Lb1win.Show();
+                    break;
+                case 2:
+                    Lb2Window Lb2win = new Lb2Window();
+                    Lb2win.Owner = this;
+                    Lb2win.Show();
                     break;
 
             }

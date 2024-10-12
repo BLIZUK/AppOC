@@ -31,7 +31,7 @@ namespace AppOC_WPF
         {
             // Инициализация окна
             InitializeComponent();
-            // Получение данных о систем
+            // Получение данных о системе
             string version = Environment.OSVersion.Version.Major.ToString();
             string numVersion = Environment.OSVersion.Version.Build.ToString();
             string platform = Environment.OSVersion.Platform.ToString();

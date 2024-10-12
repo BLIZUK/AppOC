@@ -1,0 +1,21 @@
+﻿<Window x:Class="AppOC_WPF.Lb2Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppOC_WPF"
+        mc:Ignorable="d"
+        Title="Приложение для работы с виртуальной памятью" Height="410" Width="668">
+    <Grid Margin="0,0,0,-6">
+        <Rectangle HorizontalAlignment="Left" Height="295" Margin="22,24,0,0" Stroke="#FF726E6E" VerticalAlignment="Top" Width="162"/>
+        <Button x:Name="SysInfo" Content="SysInfo" HorizontalAlignment="Left" Margin="28,30,0,0" VerticalAlignment="Top" Height="30" Width="150" Click="SysInfo_Click" FontFamily="Calibri" FontSize="14"/>
+        <Button x:Name="GlobalMemoryStatus" Content="GlobalMemoryStatus" HorizontalAlignment="Left" Margin="28,80,0,0" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Calibri" FontSize="14"/>
+        <Button x:Name="VirtualQuery" Content="VirtualQuery" HorizontalAlignment="Left" Margin="28,130,0,0" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Calibri" FontSize="14"/>
+        <Button x:Name="VirtualAlloc" Content="VirtualAlloc" HorizontalAlignment="Left" Margin="28,180,0,0" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Calibri"/>
+        <Button x:Name="VirtualFree" Content="VirtualFree" HorizontalAlignment="Left" Margin="28,230,0,0" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Calibri" FontSize="14"/>
+        <Button x:Name="VirtualProtect" Content="VirtualProtect" HorizontalAlignment="Left" Margin="28,280,0,0" VerticalAlignment="Top" Height="30" Width="150" FontFamily="Calibri" FontSize="14"/>
+        <ListBox x:Name="MainListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="212,30,26,140" FontFamily="Calibri" FontSize="14"/>
+        
+
+    </Grid>
+</Window>
