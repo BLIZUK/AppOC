@@ -55,11 +55,11 @@ namespace AppOC_WPF
             WinCat.Text = pathWindows;
             SisCat.Text = pathSystem;
             // В моей системе есть нарушения WMI, возможности найти каталог инициализатор Windows утерян
-            WinCatInst.Text = " H:\\" ;
+            WinCatInst.Text = " С:\\" ;
         }
 
         // Кнопка получение информации о диске----------------------------------------------------------------------
-        private void Info_take_Click(object sender, RoutedEventArgs e)
+        private void Info_take_Click(object sender, RoutedEventArgs e)  // Обнаружена ошибка. Требуется переработка
         {
             // Получение пути из TextBox
             string directoryPath = path.Text.Trim();
