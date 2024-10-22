@@ -1,0 +1,20 @@
+﻿<Window x:Class="AppOC_WPF.Lb4Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppOC_WPF"
+        mc:Ignorable="d"
+        Title="Lb4Window" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Update" Content="Внести изменения" Click="Button_Click" HorizontalAlignment="Left" Margin="554,379,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBox x:Name="startText" HorizontalAlignment="Left" Margin="12,81,0,80" TextWrapping="Wrap" Width="350"/>
+        <TextBox x:Name="PathText" HorizontalAlignment="Center" Margin="0,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="660" Height="20" Text="Выберите режим"/>
+        <Label Content="Путь:" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="52"/>
+        <RadioButton x:Name="stdrb" HorizontalAlignment="Left" Margin="30,47,0,0" VerticalAlignment="Top" Content="Стандартный" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="chosrb" HorizontalAlignment="Left" Margin="136,47,0,0" VerticalAlignment="Top" Content="Ручной" Checked="RadioButton_Checked_1"/>
+        <Button x:Name="Check" Content="Просмотр\Изменения" HorizontalAlignment="Left" Margin="218,44,0,0" VerticalAlignment="Top" Width="142" Click="Check_Click" Height="20"/>
+        <TextBox x:Name="EndText" Margin="0,79,13,82" TextWrapping="Wrap" HorizontalAlignment="Right" Width="350"/>
+        <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="129,379,0,0" VerticalAlignment="Top" Click="Save_Click" Width="116"/>
+    </Grid>
+</Window>
