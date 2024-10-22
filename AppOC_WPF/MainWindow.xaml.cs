@@ -17,7 +17,7 @@ namespace AppOC_WPF
     public partial class MainWindow : Window
     {
         // Флаг выбора программы
-        int flagChoseLb = 0;
+        private int flagChoseLb = 0;
 
         public MainWindow()
         {
@@ -108,6 +108,13 @@ namespace AppOC_WPF
             TextInfo.Items.Add($" ");
             TextInfo.Items.Add($"\t\t\tЛабораторная работа 4:");
             TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"  Цель работы заключается в  освоении методов работы с файлами");
+            TextInfo.Items.Add($"    проецируемыми в память. ");
+            TextInfo.Items.Add($"  Задания для самостоятельной работы:");
+            TextInfo.Items.Add($"    2.С помощью механизма проецирования в память  замените в текстовом файле все");
+            TextInfo.Items.Add($"    строчные буквы на прописные и удвойте вхождение каждой цифры. ");
+
+
         }
 
         //кнопка ---------------------------------------------------------------------------------------
@@ -172,7 +179,7 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"");
             TextInfo.Items.Add($"\t\t               AppOC Windows System Analyzer");
-            TextInfo.Items.Add($"\t\t\t\t     0.0.1");
+            TextInfo.Items.Add($"\t\t\t\t     0.0.8");
             TextInfo.Items.Add($"\t\t   Разработана Близученко Андреем ИВТ2-23");
             TextInfo.Items.Add($"\t\t\t\t 10.10.2024");
             TextInfo.Items.Add($"");
@@ -181,6 +188,7 @@ namespace AppOC_WPF
         }
 
         //кнопка ---------------------------------------------------------------------------------------
+        //Для запуска дополнительных окон 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             switch (flagChoseLb)
@@ -197,6 +205,13 @@ namespace AppOC_WPF
                     Lb2Window Lb2win = new Lb2Window();
                     Lb2win.Owner = this;
                     Lb2win.Show();
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    Lb4Window lb4win = new Lb4Window();
+                    lb4win.Owner = this;
+                    lb4win.Show();
                     break;
 
             }
