@@ -1,0 +1,24 @@
+﻿<Window x:Class="AppOC_WPF.Lb5Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppOC_WPF"
+        mc:Ignorable="d"
+        Title="Lb5Window" Height="161" Width="381">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="274*"/>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="PathText" Margin="61,16,5,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Text="..."/>
+        <Label Content="Путь:" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="52" Height="26"/>
+        <Button x:Name="FIndPath" Content="Указать путь" Margin="0,16,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="80" Grid.Column="1" Height="20" Click="FIndPath_Click"/>
+        <Button x:Name="start" Content="Запустить" HorizontalAlignment="Left" Margin="20,53,0,0" VerticalAlignment="Top" Width="64" Click="start_Click"/>
+        <Button x:Name="end" Content="Завершить" HorizontalAlignment="Left" Margin="20,92,0,0" VerticalAlignment="Top" Click="end_Click"/>
+        <Label Content="Состояние:" HorizontalAlignment="Left" Margin="165,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="status" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="241,55,0,0" TextWrapping="Wrap" Text="Не запущено" VerticalAlignment="Top" Width="95"/>
+
+    </Grid>
+</Window>

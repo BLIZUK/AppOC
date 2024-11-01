@@ -173,6 +173,9 @@ namespace AppOC_WPF
         {
             flagactive = 0;
             flagchose = 1;
+
+            // Интересная конструкция 
+            // <-----------------------------------------------------------
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
@@ -180,6 +183,7 @@ namespace AppOC_WPF
                 PathText.Text = pathFileChos;
                 flagactive = 1;
             }   
+            // <-----------------------------------------------------------
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
