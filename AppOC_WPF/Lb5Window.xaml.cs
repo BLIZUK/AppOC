@@ -21,11 +21,18 @@ namespace AppOC_WPF
     /// </summary>
     public partial class Lb5Window : Window
     {
-        string pathfile;
+
+
+        private Process _process;
+        private int flagActiv = 0;
+        private string pathfile;
+
+
         public Lb5Window()
         {
             InitializeComponent();
         }
+
 
         private void FIndPath_Click(object sender, RoutedEventArgs e)
         {
@@ -38,67 +45,38 @@ namespace AppOC_WPF
         }
 
 
-        void start_proc(string pathName)
+        private void start_Click(object sender, RoutedEventArgs e)
         {
+            status.Text = $"Запущено";
+            flagActiv = 1;
+            string pathName = PathText.Text;
             try
             {
-
-                ProcessStartInfo startInfo = new ProcessStartInfo(pathName)
-                {
-                    UseShellExecute = true, // Использовать оболочку для открытия окна
-                    CreateNoWindow = false // Не скрывать окно
-                };
-                //Process.Start(pathName);
-                status.Text = $"Запущен";
-
-
-                Process process = new Process();
-                process.StartInfo.FileName = pathName;
-
-                process.Start();
-
-
-
-                System.Threading.Thread.Sleep(5000);
-                process.Kill();
-                status.Text = $"Не активен";
-
-
-
-
-                /*
-                Process process = new Process();  
-                process.StartInfo.FileName = pathfile;
-                process.Start();
-
-                status.Text = $"Запущен";
-                */
-                //process.Kill();
-                //process.WaitForExit();
-
-                // status.Text = $"Не активен";
-
-
+                _process = new Process();
+                _process.StartInfo.FileName = pathName;
+                _process.Start();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                status.Text = $"Не активен";
+                status.Text = $"Ошибка!";
+                flagActiv = 0;
             }
+
         }
 
-
-        private void start_Click(object sender, RoutedEventArgs e)
-        {
-            status.Text = $"Запущен";
-            string pathName = PathText.Text; 
-            start_proc(pathName);
-            
-        }
 
         private void end_Click(object sender, RoutedEventArgs e)
         {
-           // process.Kill();
+            if (flagActiv == 1)
+            {
+                _process.Kill();
+                status.Text = $"Не запущено";
+                flagActiv = 0;
+            }
+            else {
+                MessageBox.Show($"Процесс не запущен!");
+            }
         }
     }
 }
