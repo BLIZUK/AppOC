@@ -71,6 +71,7 @@ namespace AppOC_WPF
             if (flagActiv == 1)
             {
                 _process.Kill();
+                _process.Dispose();
                 status.Text = $"Не запущено";
                 flagActiv = 0;
             }

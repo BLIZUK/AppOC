@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using ProcessViewer;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -48,7 +49,7 @@ namespace AppOC_WPF
             flagChoseLb = 1;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 1:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 1:");
             TextInfo.Items.Add($"Цель работы:");
             TextInfo.Items.Add($"  Целью данной работы является изучение процедур и функций Win32");
             TextInfo.Items.Add($"    позволяющих получить общую информации о характеристиках компьютера  ");
@@ -72,7 +73,7 @@ namespace AppOC_WPF
             flagChoseLb = 2;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 2:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 2:");
             TextInfo.Items.Add($"Цель работы:");
             TextInfo.Items.Add($"  Целью работы является изучение основных функций ядра Kernel32.dll ");
             TextInfo.Items.Add($"    для работы с виртуальной  памятью. Рассматриваемые в данной ");
@@ -96,7 +97,7 @@ namespace AppOC_WPF
             flagChoseLb = 3;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 3:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 3:");
             TextInfo.Items.Add($"Цель работы:");
         }
 
@@ -106,7 +107,7 @@ namespace AppOC_WPF
             flagChoseLb = 4;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 4:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 4:");
             TextInfo.Items.Add($"Цель работы:");
             TextInfo.Items.Add($"  Цель работы заключается в  освоении методов работы с файлами");
             TextInfo.Items.Add($"    проецируемыми в память. ");
@@ -123,7 +124,7 @@ namespace AppOC_WPF
             flagChoseLb = 5;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 5:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 5:");
             TextInfo.Items.Add($"Цель работы:");
             TextInfo.Items.Add($"  Целью работы является изучение основных принципов организации");
             TextInfo.Items.Add($"    многозадачных операционных систем. Все многозадачные операционные");
@@ -134,9 +135,10 @@ namespace AppOC_WPF
             TextInfo.Items.Add($"\t•  Разделение ресурсов между процессами;");
             TextInfo.Items.Add($"\t•  Организация обмена данными между процессами и потоками;");
             TextInfo.Items.Add($"\t•  Изменение класса приоритета процесса и уровня приоритета потока.");
-            TextInfo.Items.Add($"  Задание для выполнения вариант 2:");
-            TextInfo.Items.Add($"    Программа, выполняющая запуск любого процесса и завершение");
-            TextInfo.Items.Add($"    данного процесса по команде пользователя.");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"Задание для выполнения:");
+            TextInfo.Items.Add($"\t2. Программа, выполняющая запуск любого процесса и завершение");
+            TextInfo.Items.Add($"\t   данного процесса по команде пользователя.");
 
         }
 
@@ -146,8 +148,20 @@ namespace AppOC_WPF
             flagChoseLb = 6;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 6:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 6:");
             TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"  Целью работы является получение навыков работы  с функциями ");
+            TextInfo.Items.Add($"    библиотеки ToolHelp API для получения системной информации. В данной ");
+            TextInfo.Items.Add($"    работе рассматриваются следующие вопросы:");
+            TextInfo.Items.Add($"\t•  Получение списка всех  процессов в системе;");
+            TextInfo.Items.Add($"\t•  Получение списка всех  модулей в системе;");
+            TextInfo.Items.Add($"\t•  Получение списка всех  потоков выбранного процесса;");
+            TextInfo.Items.Add($"\t•  Получение карты памяти выбранного процесса.");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"Задания для самостоятельной работы");
+            TextInfo.Items.Add($"\t2. Программа, формирующая список всех процессов, выполняющихся");
+            TextInfo.Items.Add($"\t   на данном компьютере и позволяющая просматривать  список");
+            TextInfo.Items.Add($"\t   потоков данного процесса.");
         }
 
         //кнопка ---------------------------------------------------------------------------------------
@@ -230,6 +244,11 @@ namespace AppOC_WPF
                     Lb5Window lb5win = new Lb5Window();
                     lb5win.Owner = this;
                     lb5win.Show();
+                    break;
+                case 6:
+                    Lb6Window lb6win = new Lb6Window();
+                    lb6win.Owner = this;
+                    lb6win.Show();
                     break;
 
             }

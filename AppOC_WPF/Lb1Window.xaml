@@ -39,7 +39,7 @@
         <Label Content="Имя тома: &#xA;" HorizontalAlignment="Left" Margin="12,274,0,0" VerticalAlignment="Top" Height="29"/>
         <TextBlock x:Name="NameTom" HorizontalAlignment="Left" Margin="85,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20" Background="#FFE5E5E5"/>
         <Label Content="Максимальное количество символов в имени для файла:&#xA;" HorizontalAlignment="Left" Margin="12,334,0,0" VerticalAlignment="Top" Height="28"/>
-        <TextBlock x:Name="maxSymb" HorizontalAlignment="Left" Margin="340,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="54" Height="20" Background="#FFE5E5E5"/>
+        <TextBlock x:Name="maxSymb" HorizontalAlignment="Left" Margin="340,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Height="20" Background="#FFE5E5E5"/>
         <Rectangle HorizontalAlignment="Center" Height="55" Stroke="#FF8D8989" VerticalAlignment="Top" Width="392" Margin="0,474,0,0"/>
         <Label Content="Тактовая частота процессора:" HorizontalAlignment="Left" Margin="12,460,0,0" VerticalAlignment="Top" Background="White" Width="175"/>
         <Button x:Name="UnfoCpu" Content="Определить" HorizontalAlignment="Left" Margin="271,491,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.22,0.162" Height="23" Width="72" Click="UnfoCpu_Click"/>
