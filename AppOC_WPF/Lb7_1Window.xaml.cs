@@ -24,12 +24,12 @@ namespace AppOC_WPF
         public Lb7_1Window()
         {
             InitializeComponent();
-            _eventWaitHandle = new EventWaitHandle(false, EventResetMode.AutoReset, "InputEvent");
-            Thread controllerThread = new Thread(ControllerThread);
-            controllerThread.IsBackground = true;
-            controllerThread.Start();
+            _eventWaitHandle = new EventWaitHandle(false, EventResetMode.AutoReset, "InputEvent"); // Создание объекта EventWaitHandle, который будет ожидать сигнала от другого приложения
+            Thread controllerThread = new Thread(ControllerThread); // Создание нового потока, который будет выполнять метод ControllerThread
+            controllerThread.IsBackground = true; // Установка потока в фоновый режим
+            controllerThread.Start(); // Запуск потока
         }
-        private void ControllerThread()
+        private void ControllerThread() // Метод, выполняемый в отдельном потоке
         {
             while (true)
             {
