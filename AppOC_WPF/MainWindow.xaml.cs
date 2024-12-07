@@ -170,8 +170,25 @@ namespace AppOC_WPF
             flagChoseLb = 7;
             TextInfo.Items.Clear();
             TextInfo.Items.Add($" ");
-            TextInfo.Items.Add($"\t\t\tЛабораторная работа 7:");
+            TextInfo.Items.Add($"\t\t\t    Лабораторная работа 7:");
             TextInfo.Items.Add($"Цель работы:");
+            TextInfo.Items.Add($"  Целью данной работы является  исследование объектов синхронизации,");
+            TextInfo.Items.Add($"    с помощью которых в многозадачной среде обеспечивается ");
+            TextInfo.Items.Add($"    последовательный доступ к совместно используемым ресурсам. В данной");
+            TextInfo.Items.Add($"    работе рассматриваются следующие вопросы:");
+            TextInfo.Items.Add($"\t•Синхронизация потоков с помощью объектов пользовательского режима");
+            TextInfo.Items.Add($"\t (критические секции);");
+            TextInfo.Items.Add($"\t•Синхронизация потоков с помощью объектов ядра (объекты Mutex, ");
+            TextInfo.Items.Add($"\t события, семафоры, процессы и потоки);");
+            TextInfo.Items.Add($"\t•Работа Wait- функций в различных режимах.");
+            TextInfo.Items.Add($"");
+            TextInfo.Items.Add($"Задания для самостоятельной работы");
+            TextInfo.Items.Add($"    2.Исследование возможности синхронизации потоков с помощью событий. ");
+            TextInfo.Items.Add($"    Создание двух приложений. Первое приложение следит  за вторым ");
+            TextInfo.Items.Add($"    приложением. Второе приложение позволяет пользователю вводить с ");
+            TextInfo.Items.Add($"    помощью клавиатуры и отображать в своем окне произвольные символы.");
+            TextInfo.Items.Add($"    Первое, контролирующее приложение при вводе  в окне второго приложения");
+            TextInfo.Items.Add($"    символа отображает в своем окне символ \"*\".");
         }
 
         //кнопка ---------------------------------------------------------------------------------------
@@ -249,6 +266,14 @@ namespace AppOC_WPF
                     Lb6Window lb6win = new Lb6Window();
                     lb6win.Owner = this;
                     lb6win.Show();
+                    break;
+                case 7:
+                    Lb7_1Window lb7_1win = new Lb7_1Window();
+                    lb7_1win.Owner = this;
+                    lb7_1win.Show();
+                    Lb7_2Window lb7_2win = new Lb7_2Window();
+                    lb7_2win.Owner = this;
+                    lb7_2win.Show();
                     break;
 
             }
