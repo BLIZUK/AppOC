@@ -35,7 +35,9 @@ namespace AppOC_WPF
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Lb8Window2 lb8win2 = new Lb8Window2();
+            lb8win2.Owner = this;
+            lb8win2.Show();
         }
     }
 }

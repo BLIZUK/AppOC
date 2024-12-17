@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DLL;
+using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 
@@ -16,7 +17,7 @@ namespace AppOC_WPF
             if (RB1.IsChecked == true)
             {
                 // Явная загрузка
-                double result = CalculateUsingExplicitLoad();
+                double result = CalculateUsingExplicit1Load();
                 ResultLabel.Content = $"Результат: {result}";
             }
             else if (RB2.IsChecked == true)
@@ -34,12 +35,13 @@ namespace AppOC_WPF
         // Неявная загрузка
         private double CalculateUsingImplicitLoad()
         {
+            // Импортируем функцию из DLL
             [DllImport("MathLibrary.dll", CallingConvention = CallingConvention.Cdecl)]
             static extern double CalculateProduct(int n);
 
             if (int.TryParse(InputN.Text, out int n) && n > 0)
             {
-                return CalculateProduct(n);
+                return MathLibrary.CalculateProduct(n);
             }
             else
             {
@@ -66,13 +68,14 @@ namespace AppOC_WPF
                 return 0;
             }
 
+            // Привязываем адрес функции к делегату
             var calculateProduct = (CalculateProductDelegate)Marshal.GetDelegateForFunctionPointer(pAddressOfFunctionToCall, typeof(CalculateProductDelegate));
 
             if (int.TryParse(InputN.Text, out int n) && n > 0)
             {
                 double result = calculateProduct(n);
-                FreeLibrary(pDll);
-                return result;
+                FreeLibrary(pDll); // Освобождаем библиотеку после использования
+                return result ;
             }
             else
             {
@@ -95,7 +98,18 @@ namespace AppOC_WPF
 
         private void RB1_Checked(object sender, RoutedEventArgs e)
         {
-            // Дополнительная логика при выборе RB1 (если требуется)
+            // Дополнительные действия при выборе RB1 (если нужно)
+        }
+        private double CalculateUsingExplicit1Load()
+        {
+            if (int.TryParse(InputN.Text, out int n) && n > 0)
+            {
+                return MathLibrary.CalculateProduct(n);
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
