@@ -275,6 +275,11 @@ namespace AppOC_WPF
                     lb7_2win.Owner = this;
                     lb7_2win.Show();
                     break;
+                case 8:
+                    Lb8Window lb8win = new Lb8Window();
+                    lb8win.Owner = this;
+                    lb8win.Show();
+                    break;
 
             }
         }
