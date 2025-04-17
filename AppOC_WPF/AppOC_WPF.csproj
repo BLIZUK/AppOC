@@ -24,4 +24,9 @@
     <ProjectReference Include="..\DLL\DLL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="MainWin\" />
+    <Folder Include="Windows\" />
+  </ItemGroup>
+
 </Project>
